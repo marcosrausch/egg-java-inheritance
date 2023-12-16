@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Multi-file class diagram">
+  <ClassDiagramComponents>
+    <Class name="Animal" package="domain" visibility="public" xPosition="634.0" yPosition="429.0">
+      <Fields>
+        <Field name="name" type="String" visibility="protected"/>
+        <Field name="food" type="String" visibility="protected"/>
+        <Field name="age" type="byte" visibility="protected"/>
+        <Field name="breed" type="String" visibility="protected"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="name"/>
+          <Argument type="String" name="food"/>
+          <Argument type="byte" name="age"/>
+          <Argument type="String" name="breed"/>
+        </Constructor>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="feed" returnType="void" visibility="protected"/>
+      </Methods>
+    </Class>
+    <Class name="Cat" package="domain" visibility="public" xPosition="252.0" yPosition="107.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="name"/>
+          <Argument type="String" name="food"/>
+          <Argument type="byte" name="age"/>
+          <Argument type="String" name="breed"/>
+        </Constructor>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods/>
+    </Class>
+    <Class name="Dog" package="domain" visibility="public" xPosition="649.0" yPosition="107.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="name"/>
+          <Argument type="String" name="food"/>
+          <Argument type="byte" name="age"/>
+          <Argument type="String" name="breed"/>
+        </Constructor>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods/>
+    </Class>
+    <Class name="Horse" package="domain" visibility="public" xPosition="1024.0" yPosition="107.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="name"/>
+          <Argument type="String" name="food"/>
+          <Argument type="byte" name="age"/>
+          <Argument type="String" name="breed"/>
+        </Constructor>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods/>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <IsRelation name="is" source="domain.Horse" target="domain.Animal"/>
+    <IsRelation name="is" source="domain.Dog" target="domain.Animal"/>
+    <IsRelation name="is" source="domain.Cat" target="domain.Animal"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
